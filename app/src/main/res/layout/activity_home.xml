@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/welkom_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welkom!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/speedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0KM/H"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/limietText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        android:layout_marginTop="8dp"
+        android:text="Limiet: ? KM/H"/>
+
+    <Button
+        android:id="@+id/meldingen_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="meldingen" />
+
+    <Button
+        android:id="@+id/statistieken_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="statistieken" />
+
+    <FrameLayout
+        android:id="@+id/home_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

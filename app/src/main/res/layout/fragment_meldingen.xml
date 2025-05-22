@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ListView
+            android:id="@+id/list_meldingen"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:dividerHeight="1dp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/input_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Snelheid" />
+
+        <EditText
+            android:id="@+id/input_limit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Snelheidslimiet" />
+
+        <EditText
+            android:id="@+id/input_straat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Straat" />
+
+        <EditText
+            android:id="@+id/input_huisnummer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Huisnummer" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Update" />
+
+            <Button
+                android:id="@+id/btn_verwijder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Verwijder"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
